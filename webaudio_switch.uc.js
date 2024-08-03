@@ -1,5 +1,5 @@
 /* Firefox userChrome script
- * Tested on Firefox 115
+ * Tested on Firefox 128
  * Author: garywill (https://garywill.github.io)
  * 
  */
@@ -18,7 +18,7 @@ console.debug("webaudio_switch.uc.js");
     const pref_waenable = prefs.getBranch( "dom.webaudio.enabled" );
     
     Components.utils.import("resource:///modules/CustomizableUI.jsm");
-    const {Services} = Components.utils.import("resource://gre/modules/Services.jsm", {});
+    const Services = globalThis.Services || ChromeUtils.import("resource://gre/modules/Services.jsm").Services; 
     const sss = Components.classes["@mozilla.org/content/style-sheet-service;1"].getService(Components.interfaces.nsIStyleSheetService);
     // ---------------------------------------------------------------------------------------
     
