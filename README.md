@@ -2,7 +2,7 @@
 
 Add a button on Firefox toolbar to quickly toggle WebAudio enable/disable. Disabling it resists browser fingerprint.
 
-Firefox userChrome script. Tested on Firefox 128.
+Firefox userChrome script. Tested on Firefox 140.
 
 ----------------
 
